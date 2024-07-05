@@ -1,0 +1,43 @@
+.bg-body-tertiary {
+    background-image: linear-gradient(0deg, #e1ebf1, #f9fcfe);
+    box-shadow: 0 0 10px 2px rgba(95, 132, 162, 0.4);
+}
+
+nav{
+    font-family: 'Mochiy Pop One';
+    height: 4em;
+}
+
+.nav-link{
+    color: #5F84A2 !important;
+    position: relative;
+    margin: auto 2em;
+    font-size: 16px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #5F84A2;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.active{
+    color: #194569 !important;
+}
+.active::after{
+    width: 100%;
+    left: 0;
+    
+}
+.nav-link:hover{
+    color: #194569 !important;
+}
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    
+}
